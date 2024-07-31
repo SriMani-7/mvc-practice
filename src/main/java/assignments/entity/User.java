@@ -25,6 +25,7 @@ public class User {
 		this.address = address;
 	}
 	public String getEmail() {
+		
 		return email;
 	}
 	public void setEmail(String email) {
