@@ -15,8 +15,9 @@ public class InMemoryDao implements WhatsappDao {
 		if (!hasUser) {
 			users.add(u);
 			return true;
-		} else
+		} else {
 			return false;
+		}
 	}
 
 	@Override
@@ -26,7 +27,7 @@ public class InMemoryDao implements WhatsappDao {
 
 	@Override
 	public boolean login(String name, String password) {
-		for (User u: users) {
+		for (User u : users) {
 			if (u.getName().equals(name) && u.getPassword().equals(password)) {
 				currentUser = u;
 			}

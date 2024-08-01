@@ -2,15 +2,15 @@ package assignments.controller;
 
 public interface WhatsappController {
 
-    void createProfile();
+	void createProfile();
 
-    void edit();
+	void edit();
 
-    void view();
+	void view();
 
-    void search();
+	void search();
 
-    void login();
+	void login();
 
-    void logout();
+	void logout();
 }

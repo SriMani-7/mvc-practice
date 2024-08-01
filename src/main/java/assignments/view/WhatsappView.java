@@ -1,11 +1,11 @@
 package assignments.view;
 
+import java.util.Scanner;
+
 import assignments.controller.WhatsappController;
 import assignments.controller.WhatsappControllerImpl;
-import assignments.dao.InMemoryDao;
+import assignments.dao.MySqlDao;
 import assignments.service.WhatsappServiceImpl;
-
-import java.util.Scanner;
 
 public class WhatsappView {
 	public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class WhatsappView {
 
 		Scanner sc = new Scanner(System.in);
 
-		WhatsappController controller = new WhatsappControllerImpl(new WhatsappServiceImpl(new InMemoryDao()));
+		WhatsappController controller = new WhatsappControllerImpl(new WhatsappServiceImpl(new MySqlDao()));
 
 		do {
 			System.out.print("> Enter your option: ");
